@@ -1,0 +1,118 @@
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+/* Large Name */
+.large-name {
+  text-align: center;
+  z-index: 0;
+  margin-bottom: 1rem;
+}
+
+.large-name h1 {
+  font-size: 8rem; /* Reduced from 10rem */
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* Profile Picture */
+.profile-picture {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #61dafb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tagline */
+.tagline {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.tagline h2 {
+  font-size: 2rem;
+  color: #282c34;
+}
+
+/* Intro Text */
+.intro-text {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Call to Action Button */
+.cta-button {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-button a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #61dafb;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button a:hover {
+  background: #21a1f1;
+}
+
+/* 3D Shape Placeholder */
+.shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .large-name h1 {
+    font-size: 4rem; /* Reduced from 5rem */
+  }
+
+  .intro-text p {
+    font-size: 1rem;
+  }
+
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .shape {
+    width: 150px;
+    height: 150px;
+  }
+}
